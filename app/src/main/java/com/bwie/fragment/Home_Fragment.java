@@ -61,6 +61,10 @@ Home_Fragment extends Fragment {
     }
 
     //接受解析数据
+
+    /**
+     *
+     */
     class MyAnalysis extends Analysis_Json_Util {
 
         @Override
