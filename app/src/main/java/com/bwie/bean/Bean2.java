@@ -8,4 +8,6 @@ package com.bwie.bean;
  */
 
 public class Bean2 {
+
+    //cwm
 }
