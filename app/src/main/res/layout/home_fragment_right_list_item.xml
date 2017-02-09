@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/right_list_item_image"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/main_index_cart_normal"/>
+
+        <RelativeLayout
+            android:layout_toRightOf="@id/right_list_item_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/right_list_item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="招牌水果茶"/>
+            <TextView
+                android:id="@+id/right_list_item_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="￥16.00"
+                android:layout_below="@id/right_list_item_title"
+                android:textColor="@color/title"/>
+
+            <TextView
+                android:id="@+id/right_list_item_featured_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:visibility="gone"
+                android:text="￥16.00"
+                android:layout_marginLeft="15dp"
+                android:layout_below="@id/right_list_item_title"
+                android:layout_toRightOf="@id/right_list_item_price"
+                android:textColor="@color/dayday"/>
+
+            <RelativeLayout
+                android:layout_below="@id/right_list_item_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/price_difference"
+                >
+
+                <TextView
+                    android:id="@+id/price_difference"
+                    android:textColor="@color/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="立减￥2.00"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
