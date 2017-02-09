@@ -12,6 +12,7 @@
         android:orientation="vertical">
 
         <ListView
+            android:background="@color/home_fragment_left_list"
             android:id="@+id/home_fragment_left_list"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"></ListView>

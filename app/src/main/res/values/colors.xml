@@ -10,9 +10,15 @@
         #FF4081
     </color>
     <color name="title">
-        #FFaa33
+        #ff5511
     </color>
     <color name="dayday">
         #aaaaaa
+    </color>
+    <color name="home_fragment_left_list">
+        #e8ccff
+    </color>
+    <color name="home_fragment_left_list_item_bc">
+        #ffffff
     </color>
 </resources>

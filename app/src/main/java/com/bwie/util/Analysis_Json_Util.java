@@ -30,7 +30,8 @@ public abstract class Analysis_Json_Util {
             @Override
             public void onSuccess(ResponseInfo<String> responseInfo) {
 
-                analysis_Json(responseInfo.result);
+                String result = responseInfo.result;
+                analysis_Json(result);
             }
             @Override
             public void onFailure(HttpException e, String s) {

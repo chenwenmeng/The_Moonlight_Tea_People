@@ -15,23 +15,29 @@
         android:layout_weight="1">
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
             android:layout_centerVertical="true"
             android:layout_marginLeft="15dp"
             android:src="@mipmap/loading_bg_image"/>
 
         <TextView
-            android:id="@+id/title"
+            android:id="@+id/title1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:text="@string/title"
             android:textColor="@color/title"
             android:textSize="20sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/home_fragment_left_list"/>
     </RelativeLayout>
 
     <FrameLayout
+        android:id="@+id/fl"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="8">
@@ -53,16 +59,14 @@
 
             <Button
                 android:id="@+id/btn_home"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="9dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
                 android:background="@mipmap/tab_home_s"/>
 
             <TextView
                 android:id="@+id/text_home"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="6dp"
                 android:text="@string/title"
                 android:textColor="@color/title"
                 android:textSize="15sp"/>
@@ -76,16 +80,14 @@
 
                 <Button
                     android:id="@+id/btn_dayday"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="9dp"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
                     android:background="@mipmap/tab_topic"/>
 
                 <TextView
                     android:id="@+id/text_dayday"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="6dp"
                     android:text="@string/dayday"
                     android:textColor="@color/dayday"
                     android:textSize="15sp"/>
@@ -100,16 +102,14 @@
 
                 <Button
                     android:id="@+id/btn_shopping_car"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="9dp"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
                     android:background="@mipmap/main_index_cart_normal"/>
 
                 <TextView
                     android:id="@+id/text_shopping_car"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="6dp"
                     android:text="@string/shopping_cart"
                     android:textColor="@color/dayday"
                     android:textSize="15sp"/>
@@ -124,16 +124,14 @@
 
                 <Button
                     android:id="@+id/btn_my"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="9dp"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
                     android:background="@mipmap/main_index_my_normal"/>
 
                 <TextView
                     android:id="@+id/text_my"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="6dp"
                     android:text="@string/my"
                     android:textColor="@color/dayday"
                     android:textSize="15sp"/>
