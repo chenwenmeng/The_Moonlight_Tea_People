@@ -2,13 +2,11 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              android:gravity="center"
               android:orientation="vertical">
 
     <ListView
-        android:id="@+id/shopp_listview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        />
+        android:id="@+id/every_day_list"></ListView>
 
 </LinearLayout>

@@ -13,5 +13,13 @@
             @color/colorAccent
         </item>
     </style>
-
+    <style name="Transparent" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>   //对话框无标题
+        <item name="android:windowIsTranslucent">false</item> //对话框是否透明
+        <item name="android:windowBackground">@color/beij</item>//此对话框的背景
+        <item name="android:windowIsFloating">true</item> //对话框是否浮动
+        <item name="android:backgroundDimEnabled">false</item>//Activity背景是否激活（全透明or半透明）
+        <!-- 点击空白部分activity不消失 -->
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
 </resources>

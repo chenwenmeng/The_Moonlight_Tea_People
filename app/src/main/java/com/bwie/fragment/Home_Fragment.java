@@ -1,5 +1,7 @@
 package com.bwie.fragment;
 
+import android.content.Intent;
+
 import android.os.Bundle;
 
 
@@ -26,6 +28,8 @@ import com.bwie.adapter.Myadapter_homeFragment_right_list;
 import com.bwie.bean.Bean;
 
 import com.bwie.tea_people.MyApp;
+
+import com.bwie.tea_people.ParticularsActivity;
 import com.bwie.tea_people.R;
 
 
@@ -84,6 +88,16 @@ Home_Fragment extends Fragment {
                 productsBeanList.clear();
                 productsBeanList.addAll(categoriesBeanList.get(position).getProducts());
                 myadapter_homeFragment_right_list.notifyDataSetChanged();
+            }
+        });
+        rightListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent=new Intent(getActivity(), ParticularsActivity.class);
+                intent.putExtra("id",productsBeanList.get(position).getId());
+                startActivity(intent);
             }
         });
 

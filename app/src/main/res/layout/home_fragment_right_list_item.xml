@@ -13,8 +13,8 @@
         <ImageView
             android:id="@+id/right_list_item_image"
             android:layout_centerVertical="true"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             android:src="@mipmap/main_index_cart_normal"/>
 
         <RelativeLayout
@@ -30,40 +30,44 @@
                 android:textColor="#000000"
                 android:text="招牌水果茶"/>
             <TextView
-                android:id="@+id/right_list_item_price"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="18sp"
-                android:text="￥16.00"
-                android:layout_below="@id/right_list_item_title"
-                android:textColor="@color/title"/>
 
-            <TextView
                 android:id="@+id/right_list_item_featured_price"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="15sp"
-                android:visibility="gone"
                 android:text="￥16.00"
-                android:layout_marginLeft="15dp"
                 android:layout_below="@id/right_list_item_title"
-                android:layout_toRightOf="@id/right_list_item_price"
-                android:textColor="@color/dayday"/>
+                android:textSize="18sp"
+                android:textColor="@color/title"/>
+            <TextView
+                android:textSize="15sp"
+                android:layout_marginLeft="15dp"
+                android:visibility="gone"
+                android:layout_marginTop="2.5dp"
+                android:id="@+id/right_list_item_price"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/right_list_item_featured_price"
+                android:layout_height="wrap_content"
+                android:text="￥16.00"
+                android:layout_below="@id/right_list_item_title"
+                android:textColor="@color/dayday" />
+
 
             <RelativeLayout
                 android:layout_below="@id/right_list_item_price"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/price_difference"
+                    android:layout_marginTop="5dp"
                 >
 
                 <TextView
                     android:visibility="gone"
                     android:id="@+id/price_difference"
                     android:textColor="@color/title"
+                    android:textSize="10sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="立减￥2.00"/>
+                    android:text=" 立减￥2.00 "/>
 
             </RelativeLayout>
 

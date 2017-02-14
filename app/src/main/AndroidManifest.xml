@@ -3,6 +3,7 @@
           package="com.bwie.tea_people">
 
 <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <application
         android:name=".MyApp"
         android:allowBackup="true"
@@ -16,6 +17,13 @@
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        </activity>
+        <activity android:name=".ParticularsActivity"/>
+
+        <activity
+            android:name=".SecondActivity"
+            android:launchMode="singleInstance"
+            android:theme="@style/Transparent" >
         </activity>
     </application>
 

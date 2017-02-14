@@ -8,4 +8,35 @@
         name="shopping_cart">购物车</string>
     <string
         name="my">我的</string>
+     <string
+         name="my_login">登录/注册</string>
+    <string
+        name="my_level">  金牌、银牌、铜牌  </string>
+   <string
+       name="my_The_order">我的订单</string>
+    <string
+        name="my_obligation">待付款</string>
+    <string
+        name="my_wait_for_receiving">待收货</string>
+    <string
+        name="my_tradingcomplete">交易完成</string>
+    <string
+        name="my_Offer_a_red_envelope">优惠红包</string>
+    <string
+    name="my_shoucang">我的收藏</string>
+    <string
+        name="my_liulan">最近浏览</string>
+    <string
+        name="my_shiminggan">使命感</string>
+    <string
+        name="my_mendiandizhi">门店地址</string>
+    <string
+        name="my_weixin">微信分享</string>
+    <string
+        name="my_jishu">技术支持</string>
+    <string
+        name="my_guanyu">关于我们</string>
+    <string
+        name="my_shizhi">设置</string>
+
 </resources>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                >
+
+                <com.youth.banner.Banner
+                    android:id="@+id/banner1"
+                    app:is_auto_play="false"
+                    app:indicator_margin="5dp"
+                    app:indicator_drawable_selected="@color/colorAccent"
+                    app:indicator_drawable_unselected="@color/colorPrimaryDark"
+                    app:indicator_height="8dp"
+                    app:indicator_width="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp">
+
+                </com.youth.banner.Banner>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/particulars_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="锡兰极品红茶"
+                    android:textSize="25sp"
+                    />
+
+                <TextView
+                    android:id="@+id/particulars_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:text="￥10.00"
+                    android:textSize="20sp"
+                    />
+
+                <TextView
+                    android:id="@+id/particulars_f_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="100dp"
+                    android:layout_alignParentRight="true"
+                    android:text="￥8.00"
+                    android:textSize="20sp"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+
+                    android:id="@+id/particlar_maioshu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textSize="20sp"
+                    android:lines="2"
+                    android:ellipsize="end"
+                    android:text="韩国柚子茶韩国柚子茶韩国柚子茶
+                    韩国柚子茶韩国柚子茶韩国柚子茶韩国柚子茶韩国柚子茶"
+                    />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/dayday"
+                android:layout_marginTop="5dp"/>
+            <RelativeLayout
+                android:id="@+id/par_p"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/kouwei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="请选择您的口味"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="20sp"/>
+
+                <RelativeLayout
+                    android:id="@+id/r_jiaoliao"
+                    android:layout_below="@id/kouwei"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:id="@+id/jiaolao"
+                        android:text="加料"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="40dp"/>
+                    <Button
+                        android:id="@+id/jiaoliao_btn"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/kouwei"
+                        android:layout_toRightOf="@id/jiaolao"
+                        android:layout_marginLeft="15dp"
+                        android:text="标准"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/r_wendu"
+                    android:layout_below="@id/r_jiaoliao"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:id="@+id/wendu"
+                        android:text="温度"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="40dp"/>
+                    <Button
+                        android:id="@+id/wendu_btn"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/kouwei"
+                        android:layout_toRightOf="@id/wendu"
+                        android:layout_marginLeft="15dp"
+                        android:text="标准"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/r_tangliang"
+                    android:layout_below="@id/r_wendu"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:id="@+id/tangliang"
+                        android:text="糖量"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="40dp"/>
+                    <Button
+                        android:id="@+id/tangl_btn"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/kouwei"
+                        android:layout_toRightOf="@id/tangliang"
+                        android:layout_marginLeft="15dp"
+                        android:text="标准"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

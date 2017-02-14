@@ -21,4 +21,10 @@
     <color name="home_fragment_left_list_item_bc">
         #ffffff
     </color>
+    <color name="my_lines">
+        #dddddd
+    </color>
+    <color name="beij">
+        #000000
+    </color>
 </resources>

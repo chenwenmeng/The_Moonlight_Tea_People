@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 
 import android.widget.Button;
+
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.bwie.fragment.Dayday_fragment;
@@ -26,7 +28,8 @@ MainActivity extends AppCompatActivity implements View.OnClickListener {
 
 
     private TextView mTitle, mHome, mDayday, mShopping, mMy;
-    private Button mHomebtn, mDaydaybtn, mShoppingbtn, mMybtn;
+    private TextView mHomebtn, mDaydaybtn, mShoppingbtn, mMybtn;
+    private LinearLayout mHomebtn1, mDaydaybtn1, mShoppingbtn1, mMybtn1;
     private List<Fragment> fragmentList;
     private FragmentManager manager;
     private List<TextView> textViewList;
@@ -44,16 +47,16 @@ MainActivity extends AppCompatActivity implements View.OnClickListener {
 
         switch (v.getId()) {
 
-            case R.id.btn_home:
+            case R.id.m_line1:
                 showorhide(0);
                 break;
-            case R.id.btn_dayday:
+            case R.id.m_line2:
                 showorhide(1);
                 break;
-            case R.id.btn_shopping_car:
+            case R.id.m_line3:
                 showorhide(2);
                 break;
-            case R.id.btn_my:
+            case R.id.m_line4:
                 showorhide(3);
                 break;
         }
@@ -113,14 +116,20 @@ MainActivity extends AppCompatActivity implements View.OnClickListener {
         mShopping = (TextView) findViewById(R.id.text_shopping_car);
         mMy = (TextView) findViewById(R.id.text_my);
 
-        mHomebtn = (Button) findViewById(R.id.btn_home);
-        mDaydaybtn = (Button) findViewById(R.id.btn_dayday);
-        mShoppingbtn = (Button) findViewById(R.id.btn_shopping_car);
-        mMybtn = (Button) findViewById(R.id.btn_my);
-        mHomebtn.setOnClickListener(this);
-        mDaydaybtn.setOnClickListener(this);
-        mShoppingbtn.setOnClickListener(this);
-        mMybtn.setOnClickListener(this);
+        mHomebtn = (TextView) findViewById(R.id.btn_home);
+        mDaydaybtn = (TextView) findViewById(R.id.btn_dayday);
+        mShoppingbtn = (TextView) findViewById(R.id.btn_shopping_car);
+        mMybtn = (TextView) findViewById(R.id.btn_my);
+
+        mHomebtn1= (LinearLayout) findViewById(R.id.m_line1);
+        mDaydaybtn1= (LinearLayout) findViewById(R.id.m_line2);
+        mShoppingbtn1= (LinearLayout) findViewById(R.id.m_line3);
+        mMybtn1= (LinearLayout) findViewById(R.id.m_line4);
+
+        mHomebtn1.setOnClickListener(this);
+        mDaydaybtn1.setOnClickListener(this);
+        mShoppingbtn1.setOnClickListener(this);
+        mMybtn1.setOnClickListener(this);
         //初始化四个Fragment并放入集合
         fragmentList = new ArrayList<>();
         fragmentList.add(new Home_Fragment());

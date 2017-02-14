@@ -92,27 +92,29 @@ Myadapter_homeFragment_right_list extends BaseAdapter {
 
         if (!TextUtils.isEmpty(productsBeanList.get(position).getFeatured_price())) {
             v.price_difference.setVisibility(View.VISIBLE);
-            v.right_list_item_featured_price.setVisibility(View.VISIBLE);
+            v.right_list_item_price.setVisibility(View.VISIBLE);
+            v.right_list_item_price.setText("￥"+productsBeanList.get(position).getPrice());
+            v.right_list_item_price.getPaint().setFlags(Paint.STRIKE_THRU_TEXT_FLAG);
+            v.price_difference.setText("  立减￥"+pricedifference(productsBeanList.get(position).getPrice(),productsBeanList.get(position).getFeatured_price())+"0  ");
             v.right_list_item_featured_price.setText("￥"+productsBeanList.get(position).getFeatured_price());
-            v.right_list_item_featured_price.getPaint().setFlags(Paint.STRIKE_THRU_TEXT_FLAG);
-            //v.price_difference.setText("立减￥"+pricedifference(productsBeanList.get(position).getPrice(),productsBeanList.get(position).getFeatured_price()));
 
         } else {
+            v.right_list_item_featured_price.setText("￥"+productsBeanList.get(position).getPrice());
+            v.right_list_item_featured_price.setText("￥"+productsBeanList.get(position).getPrice());
             v.price_difference.setVisibility(View.GONE);
-            v.right_list_item_featured_price.setVisibility(View.GONE);
+            v.right_list_item_price.setVisibility(View.GONE);
         }
         ImageLoader.getInstance().displayImage(productsBeanList.get(position).getImage_small(),v.imageView,displayImageOptions);
-        v.right_list_item_price.setText("￥"+productsBeanList.get(position).getPrice());
         v.right_list_item_title.setText(productsBeanList.get(position).getName());
         return convertView;
     }
     //求价格差
-    private int pricedifference(String price, String featured_price) {
+    private double pricedifference(String price, String featured_price) {
 
         if(!TextUtils.isEmpty(featured_price)){
 
-            int i = Integer.valueOf(price).intValue();
-            int i2 = Integer.valueOf(featured_price).intValue();
+            double i = Double.parseDouble(price);
+            double i2 = Double.parseDouble(featured_price);
             return i-i2;
         }
         return 0;

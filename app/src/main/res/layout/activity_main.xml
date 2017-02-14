@@ -12,7 +12,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_weight="0.75">
 
         <ImageView
             android:layout_width="25dp"
@@ -33,34 +33,36 @@
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_alignParentBottom="true"
-            android:background="@color/home_fragment_left_list"/>
+            android:background="@color/my_lines"/>
     </RelativeLayout>
 
     <FrameLayout
         android:id="@+id/fl"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="8">
+        android:layout_weight="8.1">
 
     </FrameLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_weight="0.9"
         android:orientation="horizontal">
 
         <LinearLayout
+            android:id="@+id/m_line1"
             android:gravity="center"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <Button
+            <TextView
+                android:layout_marginTop="2.5dp"
                 android:id="@+id/btn_home"
-                android:layout_width="35dp"
-                android:layout_height="35dp"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
                 android:background="@mipmap/tab_home_s"/>
 
             <TextView
@@ -69,19 +71,21 @@
                 android:layout_height="wrap_content"
                 android:text="@string/title"
                 android:textColor="@color/title"
-                android:textSize="15sp"/>
+                android:textSize="13sp"/>
         </LinearLayout>
             <LinearLayout
+                android:id="@+id/m_line2"
                 android:gravity="center"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <Button
+                <TextView
+                    android:layout_marginTop="2.5dp"
                     android:id="@+id/btn_dayday"
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
                     android:background="@mipmap/tab_topic"/>
 
                 <TextView
@@ -90,20 +94,22 @@
                     android:layout_height="wrap_content"
                     android:text="@string/dayday"
                     android:textColor="@color/dayday"
-                    android:textSize="15sp"/>
+                    android:textSize="13sp"/>
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/m_line3"
                 android:gravity="center"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <Button
+                <TextView
+                    android:layout_marginTop="2.5dp"
                     android:id="@+id/btn_shopping_car"
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
                     android:background="@mipmap/main_index_cart_normal"/>
 
                 <TextView
@@ -112,20 +118,22 @@
                     android:layout_height="wrap_content"
                     android:text="@string/shopping_cart"
                     android:textColor="@color/dayday"
-                    android:textSize="15sp"/>
+                    android:textSize="13sp"/>
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/m_line4"
                 android:gravity="center"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <Button
+                <TextView
+                    android:layout_marginTop="2.5dp"
                     android:id="@+id/btn_my"
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
                     android:background="@mipmap/main_index_my_normal"/>
 
                 <TextView
@@ -134,7 +142,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/my"
                     android:textColor="@color/dayday"
-                    android:textSize="15sp"/>
+                    android:textSize="13sp"/>
 
             </LinearLayout>
 
